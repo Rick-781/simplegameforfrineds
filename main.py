@@ -1,6 +1,14 @@
 import random
 
 
+def provide_feedback(guess, target_number):
+    """Provide feedback on the guess."""
+    if guess < target_number:
+        print("Too low! Try again.")
+    elif guess > target_number:
+        print("Too high! Try again.")
+
+
 
 def play_game():
     """Main game logic."""
