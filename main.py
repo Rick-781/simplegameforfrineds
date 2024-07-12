@@ -1,6 +1,16 @@
 import random
 
 
+def get_player2_guess():
+    """Get a guess from Player 2."""
+    while True:
+        try:
+            guess = int(input("Player 2, make your guess: "))
+            return guess
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
+
 def provide_feedback(guess, target_number):
     """Provide feedback on the guess."""
     if guess < target_number:
