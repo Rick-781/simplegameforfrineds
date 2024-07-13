@@ -1,5 +1,16 @@
 import random
 
+def get_player1_number():
+    """Get a valid number from Player 1."""
+    while True:
+        try:
+            number = int(input("Player 1, please think of a number between 1 and 100 (inclusive): "))
+            if 1 <= number <= 100:
+                return number
+            else:
+                print("Please choose a number between 1 and 100.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")
 
 def get_player2_guess():
     """Get a guess from Player 2."""
