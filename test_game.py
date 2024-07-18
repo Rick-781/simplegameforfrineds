@@ -10,6 +10,10 @@ class TestGuessTheNumber(unittest.TestCase):
         with self.assertRaises(ValueError):
             get_player1_number(0)
 
+    def test_get_player1_number_invalid_high(self):
+        with self.assertRaises(ValueError):
+            get_player1_number(101)
+
    
 
 if __name__ == "__main__":
