@@ -14,6 +14,9 @@ class TestGuessTheNumber(unittest.TestCase):
         with self.assertRaises(ValueError):
             get_player1_number(101)
 
+    def test_provide_feedback_too_low(self):
+        self.assertEqual(provide_feedback(30, 50), "Too low!")
+
    
 
 if __name__ == "__main__":
