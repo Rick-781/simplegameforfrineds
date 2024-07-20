@@ -17,7 +17,11 @@ class TestGuessTheNumber(unittest.TestCase):
     def test_provide_feedback_too_low(self):
         self.assertEqual(provide_feedback(30, 50), "Too low!")
 
-   
+    def test_provide_feedback_too_high(self):
+        self.assertEqual(provide_feedback(70, 50), "Too high!")
+
+    
+
 
 if __name__ == "__main__":
     unittest.main()
