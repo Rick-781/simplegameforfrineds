@@ -20,6 +20,9 @@ class TestGuessTheNumber(unittest.TestCase):
     def test_provide_feedback_too_high(self):
         self.assertEqual(provide_feedback(70, 50), "Too high!")
 
+    def test_provide_feedback_correct(self):
+        self.assertEqual(provide_feedback(50, 50), "Correct!")
+
     
 
 
