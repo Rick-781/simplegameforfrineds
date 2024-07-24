@@ -23,6 +23,9 @@ class TestGuessTheNumber(unittest.TestCase):
     def test_provide_feedback_correct(self):
         self.assertEqual(provide_feedback(50, 50), "Correct!")
 
+    def test_play_game_correct_guess(self):
+        self.assertEqual(play_game(50, [30, 40, 50]), 3)
+
     
 
 
