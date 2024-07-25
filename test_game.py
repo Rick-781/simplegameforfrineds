@@ -26,7 +26,8 @@ class TestGuessTheNumber(unittest.TestCase):
     def test_play_game_correct_guess(self):
         self.assertEqual(play_game(50, [30, 40, 50]), 3)
 
-    
+    def test_play_game_incorrect_guess(self):
+        self.assertEqual(play_game(50, [30, 40, 60]), 3)
 
 
 if __name__ == "__main__":
